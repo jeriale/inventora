@@ -1,0 +1,23 @@
+{
+  "name": "inventora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd ./server && npm install",
+    "install": "cd ./client && npm install",
+    "start": "npx concurrently 'npm run start:frontend' 'npm run start:backend'",
+    "start:frontend": "npm --prefix ./client start",
+    "start:backend": "npm --prefix ./server start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeriale/inventora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeriale/inventora/issues"
+  },
+  "homepage": "https://github.com/jeriale/inventora#readme"
+}
